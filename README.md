@@ -1,21 +1,32 @@
 # gg-rollouts-hpa
 
-Progressive delivery on AWS EKS [Elastic Kubernetes Service] using Argo Rollouts [Argo Progressive Delivery Controller] (canary) plus HPA [Horizontal Pod Autoscaler].
+Progressive delivery using **Argo Rollouts [Argo Progressive Delivery Controller]** (stable + canary) and **HPA [Horizontal Pod Autoscaler]** on **EKS [Elastic Kubernetes Service]**.
 
-## ✅ What this demonstrates
-- **Argo Rollouts** installed and running
-- **Canary rollout** reaching **Healthy**
-- **HPA autoscaling** from **min 3** to **max 10** pods under CPU load
-- **Service LoadBalancer** exposure for the demo app
+## ✅ What this demo shows
+- **Argo Rollouts** managing a **Rollout** (stable + canary)
+- A **Service (type: LoadBalancer)** exposing the app
+- **HPA** scaling the Rollout based on **CPU [Central Processing Unit]** usage
+- Proof via real screenshots in `docs/screenshots/`
 
-## 🧱 Repo structure
-- `k8s/rollouts/rollout.yaml` → Rollout resource (canary strategy)
-- `k8s/rollouts/service.yaml` → LoadBalancer service
-- `k8s/hpa/hpa.yaml` → HPA for the Rollout
-- `docs/screenshots/` → Proof screenshots (CloudShell outputs)
+## 🧠 Architecture
+- Diagram: `docs/diagrams/gg-rollouts-hpa-arch.png`
 
-## 🚀 Deploy steps (commands used)
-### 1) Create namespace
+## 📦 Repo structure
+- `k8s/rollouts/rollout.yaml`  → Rollout resource (canary steps)
+- `k8s/rollouts/service.yaml`  → LoadBalancer Service
+- `k8s/hpa/hpa.yaml`           → HPA targeting the Rollout
+- `docs/screenshots/`          → Proof
+
+## ✅ Prerequisites
+- A working **EKS [Elastic Kubernetes Service]** cluster
+- **kubectl [Kubernetes CLI]**
+- Argo Rollouts controller installed (steps below)
+- HPA requires Metrics API support (so `kubectl top` works)
+
+## 🚀 Deploy (step-by-step)
+
+### 1) Install Argo Rollouts
 ```bash
-kubectl create ns rollouts-demo
-
+kubectl create namespace argo-rollouts
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+kubectl get pods -n argo-rollouts
