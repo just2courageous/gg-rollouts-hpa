@@ -35,6 +35,7 @@ Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller
 
 ## 🎥 Demo (YouTube (video platform))
 - Demo video: (add link)
+  Last updated: 2026-01-16
 
 ## ✅ Prerequisites
 - A working **EKS (Elastic Kubernetes Service)** cluster
