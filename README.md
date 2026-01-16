@@ -1,6 +1,6 @@
 # gg-rollouts-hpa
 
-![Architecture](architecture.png)
+[![Architecture](architecture.png)](architecture.png)
 
 Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller)** (stable + canary) and **HPA (Horizontal Pod Autoscaler)** on **EKS (Elastic Kubernetes Service)**.
 
