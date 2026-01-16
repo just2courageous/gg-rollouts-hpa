@@ -1,7 +1,6 @@
 # gg-rollouts-hpa
 
-[![Architecture](https://github.com/just2courageous/gg-rollouts-hpa/blob/main/docs/architecture.png?raw=true)](https://github.com/just2courageous/gg-rollouts-hpa/blob/main/docs/architecture.png?raw=true)
-
+[![Architecture](https://raw.githubusercontent.com/just2courageous/gg-rollouts-hpa/main/docs/architecture.png)](https://raw.githubusercontent.com/just2courageous/gg-rollouts-hpa/main/docs/architecture.png)
 
 Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller)** (stable + canary) and **HPA (Horizontal Pod Autoscaler)** on **EKS (Elastic Kubernetes Service)**.
 
@@ -12,7 +11,7 @@ Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller
 - Proof via real screenshots in **[docs/screenshots](docs/screenshots/)**
 
 ## 🧠 Architecture
-- Diagram: **[docs/architecture.png](https://github.com/just2courageous/gg-rollouts-hpa/blob/main/docs/architecture.png?raw=true)**
+- Diagram: [docs/architecture.png](https://raw.githubusercontent.com/just2courageous/gg-rollouts-hpa/main/docs/architecture.png)
 
 ## 📦 Repo structure
 - **[k8s/rollouts/rollout.yaml](k8s/rollouts/rollout.yaml)** → Rollout resource (canary steps)
