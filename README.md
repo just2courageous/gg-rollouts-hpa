@@ -11,7 +11,7 @@ Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller
 - Proof via real screenshots in **[docs/screenshots](docs/screenshots/)**
 
 ## 🧠 Architecture
-- Diagram: **[docs/diagrams/gg-rollouts-hpa-arch.png](docs/diagrams/gg-rollouts-hpa-arch.png)**
+- Diagram: **[architecture.png](architecture.png)**
 
 ## 📦 Repo structure
 - **[k8s/rollouts/rollout.yaml](k8s/rollouts/rollout.yaml)** → Rollout resource (canary steps)
