@@ -21,6 +21,18 @@ Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller
 - **[docs/evidence.md](docs/evidence.md)** → Proof list
 - **[docs/screenshots](docs/screenshots/)** → Screenshots
 
+## 🧾 Evidence table (claim → proof)
+| Claim | Proof (click) |
+| --- | --- |
+| Argo Rollouts (Argo Progressive Delivery Controller) installed | [p10-argo-install.png](docs/screenshots/p10-argo-install.png) |
+| Cluster nodes are running | [p10-nodes.png](docs/screenshots/p10-nodes.png) |
+| Rollout created (canary object exists) | [p10-rollout-created.png](docs/screenshots/p10-rollout-created.png) |
+| Service has External IP (LoadBalancer) | [p10-svc-external-ip.png](docs/screenshots/p10-svc-external-ip.png) |
+| HPA (Horizontal Pod Autoscaler) is working | [p10-hpa-success.png](docs/screenshots/p10-hpa-success.png) |
+| Rollout ends stable/healthy | [p10-final-stable.png](docs/screenshots/p10-final-stable.png) |
+| Final pods state captured | [p10-final-pods.png](docs/screenshots/p10-final-pods.png) |
+| Metrics pipeline works (`kubectl top`) | [p10-top-nodes.png](docs/screenshots/p10-top-nodes.png) |
+
 ## 🎥 Demo (YouTube (video platform))
 - Demo video: (add link)
 
