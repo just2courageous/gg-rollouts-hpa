@@ -34,7 +34,7 @@ Progressive delivery using **Argo Rollouts (Argo Progressive Delivery Controller
 | Metrics pipeline works (`kubectl top`) | [p10-top-nodes.png](docs/screenshots/p10-top-nodes.png) |
 
 ## 🎥 Demo (YouTube (video platform))
-- Demo video: (add link)
+- Demo video: (coming soon)
   Last updated: 2026-01-16
 
 ## ✅ Prerequisites
